@@ -13,7 +13,7 @@ class ClientController extends AbstractActionController
 		$client->setAdapter('Zend\Http\Client\Adapter\Curl');
 
 		$method = $this->params()->fromQuery('method', 'get');
-		$client->setUri('http://localhost:80'.$this->getRequest()->getBaseUrl().'/san-restful');
+		$client->setUri('http://localhost:80'.$this->getRequest()->getBaseUrl().'/restful');
 
 		switch($method) {
 			case 'get' :
